@@ -12,7 +12,6 @@ def make_num():
     num = 0
     while not check_genetator(num):
         num = random.randint(1000, 9999)
-    print(num)
     return(num)
 
 
