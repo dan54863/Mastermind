@@ -39,7 +39,7 @@ while True:
             number, trying = ai_step(fun_v, game_num, number, trying)
             fun_v = fun_v + 1
         print("\nИИ прошел игру за ", trying, "ходов!\n")
-        cprint("Желаете сыграть еще? (1 - Да , 2 - Нет)", color="green")
+        cprint("Желаете сыграть еще раз? (1 - Да , 2 - Нет)", color="green")
         game = input()
         if int(game) == 1:
             True
