@@ -33,14 +33,12 @@ while True:
         game_num = start()
         cprint("Число ИИ", color="yellow")
         number = 1000
-        step = 1
         fun_v = 0
         trying = 0
         while not check(game_num, number):
-            step = step + 1
             number, trying = ai_step(fun_v, game_num, number, trying)
             fun_v = fun_v + 1
-        print("\nИИ прошел игру за ", step*trying, "ходов!\n")
+        print("\nИИ прошел игру за ", trying, "ходов!\n")
         cprint("Желаете сыграть еще? (1 - Да , 2 - Нет)", color="green")
         game = input()
         if int(game) == 1:
